@@ -14,6 +14,7 @@
 		AC3C87F523CF7605004C792C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F323CF7605004C792C /* Main.storyboard */; };
 		AC3C87F723CF7607004C792C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F623CF7607004C792C /* Assets.xcassets */; };
 		AC3C87FA23CF7607004C792C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F823CF7607004C792C /* LaunchScreen.storyboard */; };
+		ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA40E2923DF9C6700BD8492 /* Extensions.swift */; };
 		ACB43ACB23DA4F3E005EF119 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */; };
 		ACD70EC223D668E60029CA4B /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD70EC123D668E50029CA4B /* LocationVC.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		AC3C881623CF782A004C792C /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		AC3C881723CF782A004C792C /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		AC3C881823CF782A004C792C /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		ACA40E2923DF9C6700BD8492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		ACD70EC123D668E50029CA4B /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 		AC3C880223CF77D3004C792C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ACA40E2923DF9C6700BD8492 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				AC3C87EC23CF7605004C792C /* AppDelegate.swift in Sources */,
 				ACB43ACB23DA4F3E005EF119 /* CurrentRunVC.swift in Sources */,
 				AC3C87EE23CF7605004C792C /* SceneDelegate.swift in Sources */,
+				ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

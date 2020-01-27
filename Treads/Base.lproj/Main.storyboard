@@ -170,6 +170,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTo-Rx-qoO">
                                 <rect key="frame" x="276" y="747" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnPressed:" destination="CvN-N7-MsN" eventType="touchUpInside" id="uOl-kb-nVi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Run" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lY6-4S-X5D">
                                 <rect key="frame" x="167.5" y="774.5" width="69" height="20"/>
@@ -213,6 +216,10 @@
                     <navigationItem key="navigationItem" id="IZu-xM-lbd"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="distanceLbl" destination="FQz-Rm-EIg" id="nmR-xY-Zbf"/>
+                        <outlet property="durationLbl" destination="OCa-0a-Lr2" id="ZTG-r5-8y1"/>
+                        <outlet property="paceLbl" destination="2Si-5R-TJa" id="Ub0-yF-lJQ"/>
+                        <outlet property="pauseLbl" destination="xTo-Rx-qoO" id="lCB-Ky-Cfz"/>
                         <outlet property="sliderImageView" destination="O6c-a6-Pfm" id="XxA-yn-x1r"/>
                         <outlet property="swipeBGImageView" destination="Asz-zI-s3p" id="obs-Mu-L8q"/>
                     </connections>
@@ -274,13 +281,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-Kt-tIT">
                                                     <rect key="frame" x="176.5" y="22" width="61.5" height="41.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vt2-N0-8Bl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vt2-N0-8Bl">
                                                             <rect key="frame" x="0.0" y="0.0" width="61.5" height="24.5"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DYG-1o-YRa">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="/mi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DYG-1o-YRa">
                                                             <rect key="frame" x="20.5" y="26.5" width="20" height="15"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
