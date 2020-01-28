@@ -20,7 +20,10 @@ class CurrentRunVC: LocationVC {
     
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
+    var timer = Timer()
     var runDistance: Double = 0
+    var counter: Int = 0
+    var pace: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +42,29 @@ class CurrentRunVC: LocationVC {
     
     func startRun() {
         manager?.startUpdatingLocation()
+        startTimer()
     }
     
     func endRun() {
         manager?.stopUpdatingLocation()
     }
     
+    func startTimer() {
+        durationLbl.text = counter.formatTimeDurationToString()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+    }
+    
+    func calculatePace(time seconds: Int, miles: Double) -> String {
+        pace = Int(Double(seconds) / miles)
+        return pace.formatTimeDurationToString()
+    }
+    
     @IBAction func pauseBtnPressed(_ sender: Any) {
+    }
+    
+    @objc func updateCounter() {
+        counter += 1
+        durationLbl.text = counter.formatTimeDurationToString()
     }
     
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
@@ -87,6 +106,9 @@ extension CurrentRunVC: CLLocationManagerDelegate {
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
             distanceLbl.text = "\(runDistance.metersToMiles(places: 2))"
+            if counter > 0 && runDistance > 0 {
+                paceLbl.text = calculatePace(time: counter, miles: runDistance.metersToMiles(places: 2))
+            }
         }
         lastLocation = locations.last
     }
