@@ -16,7 +16,7 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var durationLbl: UILabel!
     @IBOutlet weak var paceLbl: UILabel!
     @IBOutlet weak var distanceLbl: UILabel!
-    @IBOutlet weak var pauseLbl: UIButton!
+    @IBOutlet weak var pauseBtn: UIButton!
     
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
@@ -43,10 +43,20 @@ class CurrentRunVC: LocationVC {
     func startRun() {
         manager?.startUpdatingLocation()
         startTimer()
+        pauseBtn.setImage(#imageLiteral(resourceName: "pauseButton"), for: .normal)
     }
     
     func endRun() {
         manager?.stopUpdatingLocation()
+        // add object to realm
+    }
+    
+    func pauseRun() {
+        startLocation = nil
+        lastLocation = nil
+        timer.invalidate()
+        manager?.stopUpdatingLocation()
+        pauseBtn.setImage(#imageLiteral(resourceName: "resumeButton"), for: .normal)
     }
     
     func startTimer() {
@@ -60,6 +70,11 @@ class CurrentRunVC: LocationVC {
     }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
+        if timer.isValid {
+            pauseRun()
+        } else {
+            startRun()
+        }
     }
     
     @objc func updateCounter() {
@@ -77,7 +92,7 @@ class CurrentRunVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 } else if sliderView.center.x >= (swipeBGImageView.center.x + maxAdjust) {
                     sliderView.center.x = swipeBGImageView.center.x + maxAdjust
-                    // end run code
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 } else {
                     sliderView.center.x = swipeBGImageView.center.x - minAdjust
