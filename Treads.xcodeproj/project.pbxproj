@@ -18,6 +18,8 @@
 		ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA40E2923DF9C6700BD8492 /* Extensions.swift */; };
 		ACB206B923E22DF3003170E3 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB206B823E22DF3003170E3 /* Run.swift */; };
 		ACB43ACB23DA4F3E005EF119 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */; };
+		ACB45D8723E38EBE00133C99 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB45D8623E38EBE00133C99 /* Constants.swift */; };
+		ACB45D8923E395C500133C99 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB45D8823E395C500133C99 /* RunLogCell.swift */; };
 		ACD70EC223D668E60029CA4B /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD70EC123D668E50029CA4B /* LocationVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		ACA40E2923DF9C6700BD8492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACB206B823E22DF3003170E3 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
+		ACB45D8623E38EBE00133C99 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACB45D8823E395C500133C99 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		ACD70EC123D668E50029CA4B /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 		AC3C880323CF77DB004C792C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ACB45D8623E38EBE00133C99 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 		AC3C880523CF77ED004C792C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACB45D8823E395C500133C99 /* RunLogCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,10 +315,12 @@
 				ACB206B923E22DF3003170E3 /* Run.swift in Sources */,
 				AC3C87F223CF7605004C792C /* RunLogVC.swift in Sources */,
 				AC3C87F023CF7605004C792C /* BeginRunVC.swift in Sources */,
+				ACB45D8923E395C500133C99 /* RunLogCell.swift in Sources */,
 				AC3C87EC23CF7605004C792C /* AppDelegate.swift in Sources */,
 				ACB43ACB23DA4F3E005EF119 /* CurrentRunVC.swift in Sources */,
 				AC3C87EE23CF7605004C792C /* SceneDelegate.swift in Sources */,
 				ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */,
+				ACB45D8723E38EBE00133C99 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
