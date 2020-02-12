@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		467F07BA15671E30A094A2B9 /* Pods_Treads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0BADB968A30817946DA766 /* Pods_Treads.framework */; };
+		AC26B1B223F4BFD700FD2538 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC26B1B123F4BFD700FD2538 /* Location.swift */; };
 		AC3C87EC23CF7605004C792C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C87EB23CF7605004C792C /* AppDelegate.swift */; };
 		AC3C87EE23CF7605004C792C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C87ED23CF7605004C792C /* SceneDelegate.swift */; };
 		AC3C87F023CF7605004C792C /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C87EF23CF7605004C792C /* BeginRunVC.swift */; };
@@ -27,6 +28,7 @@
 		3C0BADB968A30817946DA766 /* Pods_Treads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Treads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF4ED7B3388B91201244499 /* Pods-Treads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.debug.xcconfig"; path = "Target Support Files/Pods-Treads/Pods-Treads.debug.xcconfig"; sourceTree = "<group>"; };
 		96AA2CDA7EF5413435086C5D /* Pods-Treads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.release.xcconfig"; path = "Target Support Files/Pods-Treads/Pods-Treads.release.xcconfig"; sourceTree = "<group>"; };
+		AC26B1B123F4BFD700FD2538 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AC3C87E823CF7605004C792C /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C87EB23CF7605004C792C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3C87ED23CF7605004C792C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB206B823E22DF3003170E3 /* Run.swift */,
+				AC26B1B123F4BFD700FD2538 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD70EC223D668E60029CA4B /* LocationVC.swift in Sources */,
+				AC26B1B223F4BFD700FD2538 /* Location.swift in Sources */,
 				ACB206B923E22DF3003170E3 /* Run.swift in Sources */,
 				AC3C87F223CF7605004C792C /* RunLogVC.swift in Sources */,
 				AC3C87F023CF7605004C792C /* BeginRunVC.swift in Sources */,
