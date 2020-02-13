@@ -16,6 +16,7 @@
 		AC3C87F523CF7605004C792C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F323CF7605004C792C /* Main.storyboard */; };
 		AC3C87F723CF7607004C792C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F623CF7607004C792C /* Assets.xcassets */; };
 		AC3C87FA23CF7607004C792C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C87F823CF7607004C792C /* LaunchScreen.storyboard */; };
+		AC9DA41F23F607C100F790B3 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA41E23F607C100F790B3 /* RealmConfig.swift */; };
 		ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA40E2923DF9C6700BD8492 /* Extensions.swift */; };
 		ACB206B923E22DF3003170E3 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB206B823E22DF3003170E3 /* Run.swift */; };
 		ACB43ACB23DA4F3E005EF119 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */; };
@@ -56,6 +57,7 @@
 		AC3C881623CF782A004C792C /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		AC3C881723CF782A004C792C /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		AC3C881823CF782A004C792C /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AC9DA41E23F607C100F790B3 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		ACA40E2923DF9C6700BD8492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACB206B823E22DF3003170E3 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		ACB43ACA23DA4F3E005EF119 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB45D8623E38EBE00133C99 /* Constants.swift */,
+				AC9DA41E23F607C100F790B3 /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				AC3C87EE23CF7605004C792C /* SceneDelegate.swift in Sources */,
 				ACA40E2A23DF9C6700BD8492 /* Extensions.swift in Sources */,
 				ACB45D8723E38EBE00133C99 /* Constants.swift in Sources */,
+				AC9DA41F23F607C100F790B3 /* RealmConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
